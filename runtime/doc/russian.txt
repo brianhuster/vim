@@ -8,7 +8,7 @@ Russian language localization and support in Vim	   *russian* *Russian*
 
 1. Introduction				  |russian-intro|
 2. Russian keymaps			  |russian-keymap|
-3. Localization				  |russian-l18n|
+3. Localization				  |russian-l10n|
 4. Known issues				  |russian-issues|
 
 ===============================================================================
@@ -42,7 +42,7 @@ You have to type this command in one line, it is wrapped for the sake of
 readability.
 
 ===============================================================================
-3. Localization							 *russian-l18n*
+3. Localization							 *russian-l10n*
 
 If you wish to use messages, help files, menus and other items translated to
 Russian, you will need to install the RuVim Language Pack, available in

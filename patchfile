@@ -1,0 +1,62 @@
+diff --git a/runtime/doc/Make_all.mak b/runtime/doc/Make_all.mak
+index ccc429b0c..1715382b3 100644
+--- a/runtime/doc/Make_all.mak
++++ b/runtime/doc/Make_all.mak
+@@ -152,6 +152,7 @@ DOCS = \
+        vim9.txt \
+        vim9class.txt \
+        visual.txt \
++       vietnamese.txt \
+        windows.txt \
+        workshop.txt
+
+@@ -303,6 +304,7 @@ HTMLS = \
+        version8.html \
+        version9.html \
+        vi_diff.html \
++       vietnamese.html \
+        vimindex.html \
+        vim9.html \
+        vim9class.html \
+diff --git a/runtime/doc/Makefile b/runtime/doc/Makefile
+index 707b24b48..00ea5411d 100644
+--- a/runtime/doc/Makefile
++++ b/runtime/doc/Makefile
+@@ -151,6 +151,9 @@ os_risc.txt:
+ os_win32.txt:
+        touch $@
+
++vietnamese.txt:
++       touch $@
++
+ # In *BSD, the variable '$<' is used in suffix-transformation rules (in GNU this
+ # is called "implicit rules", and in MS Windows it is called "inference rules").
+ # For code portability, it is better to use the '$?' variable for explicit rules.
+diff --git a/runtime/doc/tags b/runtime/doc/tags
+index d44dd81a8..5e57f2539 100644
+--- a/runtime/doc/tags
++++ b/runtime/doc/tags
+@@ -5786,6 +5786,7 @@ V visual.txt      /*V*
+ VIMINIT        starting.txt    /*VIMINIT*
+ VMS    os_vms.txt      /*VMS*
+ Vi     intro.txt       /*Vi*
++Vietnamese     vietnamese.txt  /*Vietnamese*
+ View   starting.txt    /*View*
+ Vim9   vim9.txt        /*Vim9*
+ Vim9-abstract-class    vim9class.txt   /*Vim9-abstract-class*
+@@ -11241,6 +11242,15 @@ vi-features    vi_diff.txt     /*vi-features*
+ vi:    options.txt     /*vi:*
+ vi_diff.txt    vi_diff.txt     /*vi_diff.txt*
+ vib    motion.txt      /*vib*
++vietnamese     vietnamese.txt  /*vietnamese*
++vietnamese-ime_diff    vietnamese.txt  /*vietnamese-ime_diff*
++vietnamese-intro       vietnamese.txt  /*vietnamese-intro*
++vietnamese-keymap      vietnamese.txt  /*vietnamese-keymap*
++vietnamese-l10n        vietnamese.txt  /*vietnamese-l10n*
++vietnamese-telex_utf-8 vietnamese.txt  /*vietnamese-telex_utf-8*
++vietnamese-viqr_utf-8  vietnamese.txt  /*vietnamese-viqr_utf-8*
++vietnamese-vni_utf-8   vietnamese.txt  /*vietnamese-vni_utf-8*
++vietnamese.txt vietnamese.txt  /*vietnamese.txt*
+ view   starting.txt    /*view*
+ view-diffs     diff.txt        /*view-diffs*
+ view-file      starting.txt    /*view-file*
